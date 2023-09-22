@@ -76,7 +76,7 @@ fs.readFile("./users.json", (err, data) => {
 })
 
 // Login to one of the users from ./users.json
-server.post('/auth/login', (req, res) => {
+server.post('/oauth/token', (req, res) => {
   console.log("login endpoint called; request body:");
   console.log(req.body);
   const {email, password} = req.body;
@@ -118,6 +118,6 @@ server.use(/^(?!\/auth).*$/,  (req, res, next) => {
 
 server.use(router)
 
-server.listen(8000, () => {
+server.listen(8081, () => {
   console.log('Run Auth API Server')
 })

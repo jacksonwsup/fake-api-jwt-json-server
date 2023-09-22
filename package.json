@@ -1,13 +1,14 @@
 {
-  "name": "json-server-api",
+  "name": "servidor",
   "version": "1.0.0",
-  "description": "Simple Fake API",
+  "description": "",
+  "db": "npx json-server --watch db.json -- port 5501",
   "main": "main.js",
   "scripts": {
-    "start": "json-server --watch ./database.json",
+    "start": "json-server --watch ./db.json",
     "start-auth": "node server.js"
   },
-  "author": "ME:)",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
