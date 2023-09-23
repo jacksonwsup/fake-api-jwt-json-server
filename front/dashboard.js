@@ -1,5 +1,10 @@
+
+
 window.onload = function() {
     const token = localStorage.getItem("token");
+
+    //console.log(token);
+
 
     if (!token) {
         window.location.href = "/index.html";
@@ -12,7 +17,8 @@ window.onload = function() {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": access_token
+            "Authorization": "application/json",
+            "Authorization": "Bearer " + token
         }
     })
     .then(async (response) => {

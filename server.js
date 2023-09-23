@@ -11,6 +11,7 @@ server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
 server.use(jsonServer.defaults());
 
+
 const SECRET_KEY = '123456789'
 
 const expiresIn = '1h'
@@ -21,8 +22,8 @@ function createToken(payload){
 }
 
 // Verify the token 
-function verifyToken(token){
-  return  jwt.verify(token, SECRET_KEY, (err, decode) => decode !== undefined ?  decode : err)
+function verifyToken(access_token){
+  return  jwt.verify(access_token, SECRET_KEY, (err, decode) => decode !== undefined ?  decode : err)
 }
 
 // Check if the user exists in database
@@ -57,16 +58,6 @@ fs.readFile("./users.json", (err, data) => {
     // Get the id of last user
     var last_item_id = data.users[data.users.length-1].id;
 
-    //Add new user
-    data.users.push({id: last_item_id + 1, email: email, password: password}); //add some data
-    var writeData = fs.writeFile("./users.json", JSON.stringify(data), (err, result) => {  // WRITE
-        if (err) {
-          const status = 401
-          const message = err
-          res.status(status).json({status, message})
-          return
-        }
-    });
 });
 
 // Create token for new user
