@@ -1,185 +1,72 @@
 {
   "restaurantes": [
-      {
-          "id": 1,
-          "nome": "Prosacco, Pouros and O'Connell",
-          "taxaFrete": "9.00"
-      },
-      {
-          "id": 2,
-          "nome": "Hettinger Inc",
-          "taxaFrete": "7.00"
-      },
-      {
-          "id": 3,
-          "nome": "Schultz - Medhurst",
-          "taxaFrete": "2.00"
-      },
-      {
-          "id": 4,
-          "nome": "Rau, Jakubowski and Schiller",
-          "taxaFrete": "6.00"
-      },
-      {
-          "id": 5,
-          "nome": "Nader Group",
-          "taxaFrete": "7.00"
-      },
-      {
-          "id": 6,
-          "nome": "McCullough, Dooley and Moore",
-          "taxaFrete": "1.00"
-      },
-      {
-          "id": 7,
-          "nome": "Block, Goldner and Boehm",
-          "taxaFrete": "7.00"
-      },
-      {
-          "id": 8,
-          "nome": "Wiegand, Bogan and Moore",
-          "taxaFrete": "9.00"
-      },
-      {
-          "id": 9,
-          "nome": "Christiansen, Hyatt and Jones",
-          "taxaFrete": "7.00"
-      },
-      {
-          "id": 10,
-          "nome": "Balistreri - Tillman",
-          "taxaFrete": "5.00"
-      }
+    {
+      "id": 1,
+      "nome": "Resautante Tre-Fratelli",
+      "taxaFrete": "9.00"
+    },
+    {
+      "id": 1,
+      "nome": "Piola - Famosi Per La Pizza",
+      "taxaFrete": "12.00"
+    },
+    {
+      "id": 1,
+      "nome": "Originale Cucina e Pizzeria",
+      "taxaFrete": "15.00"
+    }
   ],
   "produtos": [
-      {
-          "id": 1,
-          "nome": "Refined Soft Gloves",
-          "preco": "2.00"
-      },
-      {
-          "id": 2,
-          "nome": "Electronic Bronze Tuna",
-          "preco": "6.00"
-      },
-      {
-          "id": 3,
-          "nome": "Luxurious Granite Pizza",
-          "preco": "10.00"
-      },
-      {
-          "id": 4,
-          "nome": "Luxurious Wooden Pizza",
-          "preco": "6.00"
-      },
-      {
-          "id": 5,
-          "nome": "Tasty Bronze Salad",
-          "preco": "1.00"
-      },
-      {
-          "id": 6,
-          "nome": "Ergonomic Cotton Cheese",
-          "preco": "7.00"
-      },
-      {
-          "id": 7,
-          "nome": "Licensed Wooden Table",
-          "preco": "8.00"
-      },
-      {
-          "id": 8,
-          "nome": "Gorgeous Bronze Computer",
-          "preco": "7.00"
-      },
-      {
-          "id": 9,
-          "nome": "Refined Metal Shoes",
-          "preco": "5.00"
-      },
-      {
-          "id": 10,
-          "nome": "Intelligent Frozen Towels",
-          "preco": "8.00"
-      }
-  ],
-  "usuarios": [
-      {
-          "id": 1,
-          "email": "admin@gmail.com",
-          "password": "d033e22ae348aeb5660fc2140aec35850c4da997"
-      }
+    {
+      "id": 1,
+      "nome": "Coca Cola 2L",
+      "preco": "10.00"
+    },
+    {
+      "id": 2,
+      "nome": "Suco de Laranja",
+      "preco": "5.00"
+    },
+    {
+      "id": 3,
+      "nome": "Pizza A La Carte",
+      "preco": "45.00"
+    }
   ],
   "pedidos": [
-      {
-          "id": 1,
-          "itens": {
-              "produto": 10,
-              "quantidade": 10
-          }
-      },
-      {
-          "id": 2,
-          "itens": {
-              "produto": 1,
-              "quantidade": 1
-          }
-      },
-      {
-          "id": 3,
-          "itens": {
-              "produto": 6,
-              "quantidade": 7
-          }
-      },
-      {
-          "id": 4,
-          "itens": {
-              "produto": 1,
-              "quantidade": 1
-          }
-      },
-      {
-          "id": 5,
-          "itens": {
-              "produto": 7,
-              "quantidade": 3
-          }
-      },
-      {
-          "id": 6,
-          "itens": {
-              "produto": 1,
-              "quantidade": 1
-          }
-      },
-      {
-          "id": 7,
-          "itens": {
-              "produto": 9,
-              "quantidade": 10
-          }
-      },
-      {
-          "id": 8,
-          "itens": {
-              "produto": 1,
-              "quantidade": 7
-          }
-      },
-      {
-          "id": 9,
-          "itens": {
-              "produto": 2,
-              "quantidade": 4
-          }
-      },
-      {
-          "id": 10,
-          "itens": {
-              "produto": 8,
-              "quantidade": 10
-          }
-      }
+    {
+      "itens": [
+        {
+          "produto": 1,
+          "quantidade": 1
+        },
+        {
+          "produto": 2,
+          "quantidade": 1
+        },
+        {
+          "produto": 3,
+          "quantidade": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "itens": [
+        {
+          "produto": 1,
+          "quantidade": 1
+        },
+        {
+          "produto": 2,
+          "quantidade": 1
+        },
+        {
+          "produto": 3,
+          "quantidade": 1
+        }
+      ],
+      "id": 2
+    }
   ]
 }
