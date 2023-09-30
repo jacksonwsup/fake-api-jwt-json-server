@@ -2,10 +2,10 @@
   "name": "servidor",
   "version": "1.0.0",
   "description": "",
-  "db": "npx json-server --watch db.json -- port 5501",
+  "db": "npx json-server --watch db.json -- port 8081",
   "main": "main.js",
   "scripts": {
-    "start": "json-server --watch ./db.json",
+    "start": "json-server --watch ./database.json",
     "start-auth": "node server.js"
   },
   "author": "",
